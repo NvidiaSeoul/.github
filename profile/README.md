@@ -46,6 +46,14 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 | [data-analysis-penguins](https://github.com/NvidiaSeoul/data-analysis-penguins) | pandas EDA·시각화 (Palmer Penguins) |
 | [nlp](https://github.com/NvidiaSeoul/nlp) | 나이브베이즈·워드임베딩·SimpleRNN |
 
+## 심화 — 컴퓨터 비전 & 생성 모델
+
+| 저장소 | 내용 |
+|---|---|
+| [pytorch-object-detection](https://github.com/NvidiaSeoul/pytorch-object-detection) | 단일 객체 탐지 — VOC XML·바운딩박스·CNN |
+| [semantic-segmentation](https://github.com/NvidiaSeoul/semantic-segmentation) | 시맨틱 세그멘테이션 — FCN & U-Net |
+| [generative-models](https://github.com/NvidiaSeoul/generative-models) | 생성 모델 — VAE(PyTorch) & DCGAN(TensorFlow) |
+
 ## 학습 로드맵
 
 ```mermaid
