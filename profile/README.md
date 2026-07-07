@@ -39,6 +39,7 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 | [ai-fundamentals](https://github.com/NvidiaSeoul/ai-fundamentals) | 파이썬 문법·OOP·파일IO·정규식·크롤링 + NumPy/Pandas/시각화 |
 | [machine-learning-sklearn](https://github.com/NvidiaSeoul/machine-learning-sklearn) | KNN·회귀·SVM·결정트리·KMeans (scikit-learn) |
 | [deep-learning-keras](https://github.com/NvidiaSeoul/deep-learning-keras) | Keras MLP·배치정규화·오토인코더 |
+| [pytorch-deep-learning](https://github.com/NvidiaSeoul/pytorch-deep-learning) | PyTorch MLP·MNIST·정규화 (펭귄 EDA→신경망) |
 | [computer-vision](https://github.com/NvidiaSeoul/computer-vision) | CNN 이미지 분류·데이터 증강 |
 | [nlp](https://github.com/NvidiaSeoul/nlp) | 나이브베이즈·워드임베딩·SimpleRNN |
 
