@@ -54,6 +54,12 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 | [semantic-segmentation](https://github.com/NvidiaSeoul/semantic-segmentation) | 시맨틱 세그멘테이션 — FCN & U-Net |
 | [generative-models](https://github.com/NvidiaSeoul/generative-models) | 생성 모델 — VAE(PyTorch) & DCGAN(TensorFlow) |
 
+## 이론 정리
+
+| 저장소 | 내용 |
+|---|---|
+| [nvidia-dli-deep-learning-notes](https://github.com/NvidiaSeoul/nvidia-dli-deep-learning-notes) | NVIDIA DLI 딥러닝 입문 과정 한국어 학습 노트 (7개 섹션) |
+
 ## 학습 로드맵
 
 ```mermaid
