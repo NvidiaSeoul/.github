@@ -21,7 +21,23 @@
 
 ## 소개
 
-AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델(GAN)까지** 밟아온 학습 여정을, 단순 실습 파일 모음이 아니라 **주제별로 완결된 저장소**로 재구성했습니다. 각 저장소는 개요·방법론·결과·실행법을 갖춘 하나의 독립된 프로젝트입니다.
+AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델·AI 에이전트까지** 밟아온 학습 여정을, 단순 실습 파일 모음이 아니라 **주제별로 완결된 저장소**로 재구성했습니다. 각 저장소는 개요·방법론·결과·실행법을 갖춘 하나의 독립된 프로젝트입니다.
+
+<div align="center">
+
+![포트폴리오 구성](https://raw.githubusercontent.com/NvidiaSeoul/.github/main/assets/overview.png)
+
+</div>
+
+## 프로젝트 결과물
+
+각 저장소의 실제 실행 결과입니다. 지표를 만들어 넣지 않고, 코드를 돌려 나온 산출물만 담았습니다.
+
+<div align="center">
+
+![프로젝트 결과물](https://raw.githubusercontent.com/NvidiaSeoul/.github/main/assets/showcase.png)
+
+</div>
 
 ## 대표 프로젝트 (Flagship)
 
