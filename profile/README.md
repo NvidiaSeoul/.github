@@ -29,6 +29,41 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 
 </div>
 
+## 최종 프로젝트 — BrandGuard
+
+<div align="center">
+
+### [브랜드 리스크 조기탐지 및 대응 Agent](https://github.com/NvidiaSeoul/brandguard-risk-agent)
+
+**온라인 여론에서 브랜드 위기의 전조를 포착해, 원인 분석과 대응안까지 자동 생성하는 AI 에이전트**
+
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-StateGraph-1C3C3C)
+![scikit-learn](https://img.shields.io/badge/IsolationForest-F7931E?logo=scikitlearn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-6%2F6%20passing-76B900)
+
+[![BrandGuard 대시보드](https://raw.githubusercontent.com/NvidiaSeoul/brandguard-risk-agent/main/docs/dashboard.png)](https://github.com/NvidiaSeoul/brandguard-risk-agent)
+
+</div>
+
+브랜드 위기는 **속도의 문제**입니다. 초기 몇 시간의 대응이 피해 규모를 좌우하지만, 기존 모니터링은 "언급량 집계와 대시보드 조회"에 머물러 담당자가 직접 지표를 해석해야 합니다.
+
+BrandGuard는 뉴스·블로그·웹 언급을 수집해 **6개 특징 그룹**(언급량·증가속도·감성·키워드·작성자·확산)으로 정량화하고, **Isolation Forest + 룰 엔진**으로 위험도를 3단계로 판정합니다. 그다음 **LangGraph 상태기계**가 위험도에 따라 경로를 분기해 원인을 분석하고 대응 리포트를 만든 뒤, **담당자 승인(Human-in-the-Loop)** 을 거쳐야만 알림을 발송합니다.
+
+| 특징 | 설명 |
+|---|---|
+| **오탐을 줄이는 설계** | 정상적 급증(신제품·이벤트)과 실제 리스크를 감성·키워드·작성자 패턴으로 구분. 학습(평상시) 분포 기준으로 스코어를 정규화해 평상시 오탐 제거 |
+| **봇·노이즈 판별** | 소수 계정 반복 작성·신규 계정 비중으로 인위적 여론 조성 탐지 |
+| **근거를 제시하는 탐지** | "언급량 급증(108건, 평상시 14건) · 부정 여론 73%(평상시 16%) · 5.7배 증가"처럼 판단 이유를 사람이 읽을 수 있게 출력 |
+| **채널별 감성 분석** | 실측 비교 후 커뮤니티·SNS는 한국어 모델, 뉴스는 사전 기반으로 라우팅 |
+| **전 계층 구현** | 수집 4채널 · 이상탐지 · LangGraph 에이전트 · Streamlit 대시보드 · FastAPI 12개 엔드포인트 · 스케줄러 · Slack/이메일 알림 · SQLite/PostgreSQL |
+
+> 약 2,500줄 · 테스트 6/6 통과 · **API 키 없이도 전체 파이프라인이 동작**(데모 데이터·규칙 기반 자동 폴백)
+
+**→ [저장소 바로가기](https://github.com/NvidiaSeoul/brandguard-risk-agent)**
+
 ## 프로젝트 결과물
 
 각 저장소의 실제 실행 결과입니다. 지표를 만들어 넣지 않고, 코드를 돌려 나온 산출물만 담았습니다.
@@ -70,41 +105,6 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 | [semantic-segmentation](https://github.com/NvidiaSeoul/semantic-segmentation) | 시맨틱 세그멘테이션 — FCN & U-Net |
 | [generative-models](https://github.com/NvidiaSeoul/generative-models) | 생성 모델 — VAE(PyTorch) & DCGAN(TensorFlow) |
 
-## 최종 프로젝트 — BrandGuard
-
-<div align="center">
-
-### [브랜드 리스크 조기탐지 및 대응 Agent](https://github.com/NvidiaSeoul/brandguard-risk-agent)
-
-**온라인 여론에서 브랜드 위기의 전조를 포착해, 원인 분석과 대응안까지 자동 생성하는 AI 에이전트**
-
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-StateGraph-1C3C3C)
-![scikit-learn](https://img.shields.io/badge/IsolationForest-F7931E?logo=scikitlearn&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-6%2F6%20passing-76B900)
-
-[![BrandGuard 대시보드](https://raw.githubusercontent.com/NvidiaSeoul/brandguard-risk-agent/main/docs/dashboard.png)](https://github.com/NvidiaSeoul/brandguard-risk-agent)
-
-</div>
-
-브랜드 위기는 **속도의 문제**입니다. 초기 몇 시간의 대응이 피해 규모를 좌우하지만, 기존 모니터링은 "언급량 집계와 대시보드 조회"에 머물러 담당자가 직접 지표를 해석해야 합니다.
-
-BrandGuard는 뉴스·블로그·웹 언급을 수집해 **6개 특징 그룹**(언급량·증가속도·감성·키워드·작성자·확산)으로 정량화하고, **Isolation Forest + 룰 엔진**으로 위험도를 3단계로 판정합니다. 그다음 **LangGraph 상태기계**가 위험도에 따라 경로를 분기해 원인을 분석하고 대응 리포트를 만든 뒤, **담당자 승인(Human-in-the-Loop)** 을 거쳐야만 알림을 발송합니다.
-
-| 특징 | 설명 |
-|---|---|
-| **오탐을 줄이는 설계** | 정상적 급증(신제품·이벤트)과 실제 리스크를 감성·키워드·작성자 패턴으로 구분. 학습(평상시) 분포 기준으로 스코어를 정규화해 평상시 오탐 제거 |
-| **봇·노이즈 판별** | 소수 계정 반복 작성·신규 계정 비중으로 인위적 여론 조성 탐지 |
-| **근거를 제시하는 탐지** | "언급량 급증(108건, 평상시 14건) · 부정 여론 73%(평상시 16%) · 5.7배 증가"처럼 판단 이유를 사람이 읽을 수 있게 출력 |
-| **채널별 감성 분석** | 실측 비교 후 커뮤니티·SNS는 한국어 모델, 뉴스는 사전 기반으로 라우팅 |
-| **전 계층 구현** | 수집 4채널 · 이상탐지 · LangGraph 에이전트 · Streamlit 대시보드 · FastAPI 12개 엔드포인트 · 스케줄러 · Slack/이메일 알림 · SQLite/PostgreSQL |
-
-> 약 2,500줄 · 테스트 6/6 통과 · **API 키 없이도 전체 파이프라인이 동작**(데모 데이터·규칙 기반 자동 폴백)
-
-**→ [저장소 바로가기](https://github.com/NvidiaSeoul/brandguard-risk-agent)**
-
 ## AI 에이전트 (LangChain · LangGraph)
 
 | 저장소 | 내용 |
@@ -134,11 +134,13 @@ flowchart LR
 ## 기술 스택
 
 - **언어/도구**: Python, Git, Jupyter
-- **데이터**: NumPy, pandas, Matplotlib, seaborn, BeautifulSoup
-- **ML**: scikit-learn
-- **DL**: TensorFlow / Keras
-- **CV**: CNN, VGG16 전이학습, YOLOv5/v8, DCGAN
-- **NLP**: KoNLPy(형태소 분석), Word Embedding, RNN/LSTM
+- **데이터**: NumPy, pandas, Matplotlib, seaborn, BeautifulSoup, trafilatura
+- **ML**: scikit-learn (분류·회귀·군집·이상탐지)
+- **DL**: TensorFlow / Keras, PyTorch
+- **CV**: CNN, VGG16 전이학습, YOLOv5/v8, FCN·U-Net, DCGAN, VAE, OpenCV
+- **NLP**: KoNLPy(형태소 분석), Word Embedding, RNN/LSTM, 한국어 감성 분석
+- **AI 에이전트**: LangChain, LangGraph, RAG, 스트리밍, Human-in-the-Loop
+- **서비스**: Streamlit, FastAPI, PostgreSQL, ChromaDB
 
 ## About
 
