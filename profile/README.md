@@ -54,6 +54,12 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 | [semantic-segmentation](https://github.com/NvidiaSeoul/semantic-segmentation) | 시맨틱 세그멘테이션 — FCN & U-Net |
 | [generative-models](https://github.com/NvidiaSeoul/generative-models) | 생성 모델 — VAE(PyTorch) & DCGAN(TensorFlow) |
 
+## 최종 프로젝트
+
+| 저장소 | 내용 |
+|---|---|
+| [**brandguard-risk-agent**](https://github.com/NvidiaSeoul/brandguard-risk-agent) | 브랜드 리스크 조기탐지 및 대응 Agent — LangGraph 상태기계 + Isolation Forest 이상탐지, 원인분석·리포트 자동화 |
+
 ## AI 에이전트 (LangChain · LangGraph)
 
 | 저장소 | 내용 |
