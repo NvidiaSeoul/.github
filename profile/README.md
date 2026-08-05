@@ -60,6 +60,7 @@ AI 코어 엔지니어 교육과정에서 **파이썬 기초부터 생성 모델
 |---|---|
 | [company-analysis-agent](https://github.com/NvidiaSeoul/company-analysis-agent) | LangGraph 기업분석 에이전트 — 시세·뉴스 수집·리랭킹 → Word 보고서 |
 | [travel-planner-agent](https://github.com/NvidiaSeoul/travel-planner-agent) | Streamlit 여행일정 에이전트 — 구조화 출력 + 지도 동선 시각화 |
+| [ai-agent-course](https://github.com/NvidiaSeoul/ai-agent-course) | 에이전트 개발 실습 — LangChain·RAG·LangGraph·스트리밍·FastAPI (13개 주제) |
 
 ## 이론 정리
 
